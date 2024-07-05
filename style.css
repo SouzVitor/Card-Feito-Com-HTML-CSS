@@ -1,18 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Adicionado para garantir que o padding e a borda sejam incluídos na largura e altura totais dos elementos */
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh; /* comando height em CSS define a altura vh (Viewport Height)  100vh ocupará toda a altura visível. */
+    min-height: 100vh; /* Alterado para garantir que o conteúdo ocupe toda a altura visível */
     font-family: "Arial";
     gap: 30px; /* gap define um espaçamento entre itens */
     background-image: url("background1.png");
     background-size: cover; /* Para assegurar que a imagem de fundo cobre toda a área visível */
     background-position: center; /* Para centrar a imagem de fundo */
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem de fundo */
 }
 
 .card {
@@ -43,6 +45,7 @@ body {
     align-items: center;
     gap: 4px;
     height: 40%; /* Ajustado para evitar overflow */
+    padding: 10px; /* Adiciona um pouco de padding para evitar que o conteúdo encoste nas bordas do card */
 }
 
 .card h1 {
@@ -52,6 +55,14 @@ body {
 .card h2 {
     font-size: .9rem;
     color: #aaa;
+    text-align: center; /* Centraliza o texto */
+}
+
+.card span {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto */
 }
 
 .card button {
