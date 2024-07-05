@@ -1,47 +1,59 @@
 * {
-    margin:  0;
+    margin: 0;
     padding: 0;
-    
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh; /*comando height em CSS define a altura vh (Viewport Height)  100vh ocupará toda a altura visível. */
+    height: 90vh; /* comando height em CSS define a altura vh (Viewport Height)  100vh ocupará toda a altura visível. */
     font-family: "Arial";
-    gap: 30px; /*gap defini um espaçamento entre itens*/
-    background-image: url("background1.png")
-    
+    gap: 30px; /* gap define um espaçamento entre itens */
+    background-image: url("background1.png");
+    background-size: cover; /* Para assegurar que a imagem de fundo cobre toda a área visível */
+    background-position: center; /* Para centrar a imagem de fundo */
 }
+
 .card {
     background-color: antiquewhite;
     width: 190px;
     height: 260px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaa;
+    transition: transform 0.3s, box-shadow 0.3s; /* Adiciona transição suave para transformações e sombra */
 }
+
+.card:hover {
+    transform: translateY(-10px); /* Move o card 10px para cima */
+    box-shadow: 4px 8px 20px #aaa; /* Aumenta a sombra para dar um efeito de elevação */
+}
+
 .card img {
     width: 100%;
     height: 60%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+
 .card div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4px;
-    height: 50%;
+    height: 40%; /* Ajustado para evitar overflow */
 }
+
 .card h1 {
     font-size: 1.2rem;
 }
+
 .card h2 {
     font-size: .9rem;
     color: #aaa;
 }
+
 .card button {
     background-color: #2192ff;
     height: 30px;
@@ -52,7 +64,9 @@ body {
     font-size: 1rem;
     font-weight: bold;
     border-radius: 4px;
+    transition: background-color 0.3s; /* Adiciona transição suave para a cor do fundo */
 }
+
 .card button:hover {
     background-color: #137de8;
     cursor: pointer;
