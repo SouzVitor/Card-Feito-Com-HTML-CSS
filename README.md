@@ -6,7 +6,7 @@ Este projeto consiste em uma página web que exibe cards de produtos de marmitas
 
 Veja o projeto em funcionamento [aqui](https://souzvitor.github.io/Card-Feito-Com-HTML-CSS/).
 
-![Screenshot do projeto](screenshot.png)
+![Screenshot do projeto](obamarmitas.png)
 
 ## Tecnologias Utilizadas
 
