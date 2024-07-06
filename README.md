@@ -35,4 +35,4 @@ Veja o projeto em funcionamento [aqui](https://souzvitor.github.io/Card-Feito-Co
    
 2. **Commit e Push**: Após editar o arquivo README.md, faça commit e push para o GitHub para que as alterações sejam refletidas no seu repositório online.
 
-Se precisar de mais alguma modificação ou adição de informações, é só avisar!
+
